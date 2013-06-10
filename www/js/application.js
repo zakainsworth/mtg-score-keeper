@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('.btn').click(function() {
+  $('.btn').tap(function() {
     var player = $(this).data('player');
     var new_total = parseInt($('#player'+player+'-life').text()) + parseInt($(this).data('value'));
     $('#player'+player+'-life .ui-btn-text').text(new_total);
